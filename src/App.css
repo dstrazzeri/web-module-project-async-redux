@@ -1,13 +1,11 @@
 .App {
 text-align: center;
-/* background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-background-size: cover;
-background-repeat: repeat; */
+font-family: 'Fuzzy Bubbles', cursive;
 }
 
 h1{
   font-size:5em;
+  margin-top: 1em;
   margin-bottom: 5%;
   color: azure;
 }
