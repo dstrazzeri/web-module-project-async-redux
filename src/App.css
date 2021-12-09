@@ -16,6 +16,9 @@ h2{
 h3{
   margin-top:2em;
 }
+h2, h3 {
+  color:rgb(94, 166, 138); 
+}
 
 .activity-list{
   position: relative;
@@ -39,5 +42,5 @@ button {
 }
 
 button:hover {
-  background-color:rgba(94, 166, 138); 
+  background-color:rgb(94, 166, 138); 
 }
