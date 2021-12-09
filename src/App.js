@@ -1,12 +1,22 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import ActivityList from './components/ActivityList';
+import {connect} from "react-redux";
+import {getActivity} from "./actions";
+import Header from "./components/Header";
 
-function App() {
-  return (
+function App(props) {
+
+    useEffect(() => {
+       props.getActivity()
+    },[])
+
+    return (
     <div className="App">
-      Async Redux Project
+        <Header/>
+        <ActivityList/>
     </div>
   );
-}
+};
 
-export default App;
+export default  connect(null, {  getActivity })(App);
